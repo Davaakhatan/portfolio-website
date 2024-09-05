@@ -1,0 +1,151 @@
+/* src/styles/Home.css */
+
+.home-background {
+  background-image: url('../Assets/backgroundImage.jpg');
+  background-size: cover; /* Adjust this based on how you want the image to cover the section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  min-height: 100vh; /* Ensure it covers the viewport height */
+}
+
+
+#hero {
+  background: linear-gradient(to right, #1a1a1a, #3b3b3b);
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #007bff;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+.resume-section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-toggle-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-toggle-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.resume-section .btn-download-resume {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-section .btn-download-resume:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.resume-section .btn-download-resume i {
+  margin-right: 8px;
+}
+
+.about-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Home.css */
+.find-me-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.find-me-section .flex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.find-me-section .bg-white {
+  background-color: #ffffff;
+}
+
+.find-me-section img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
