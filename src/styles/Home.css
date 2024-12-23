@@ -10,11 +10,16 @@
 
 
 #hero {
-  background: linear-gradient(to right, #1a1a1a, #3b3b3b);
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../Assets/backgroundImage.jpg') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 150px 20px;
 }
+
 
 .profile-img {
   width: 150px;
