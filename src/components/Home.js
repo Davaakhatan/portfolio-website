@@ -5,7 +5,7 @@ import { Button, Container, Row } from 'react-bootstrap';
 import { Worker, Viewer } from '@react-pdf-viewer/core'; // Worker to handle pdf rendering
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import resumePdf from '../Assets/Resume.pdf'; // Update the path to your resume PDF
+import resumePdf from '../Assets/SWE_Resume.pdf'; // Update the path to your resume PDF
 import githubIcon from '../Assets/github.svg';
 import linkedinIcon from '../Assets/linkedin.svg';
 import twitterIcon from '../Assets/twitter.svg';
