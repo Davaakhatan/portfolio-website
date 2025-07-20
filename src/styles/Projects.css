@@ -1,50 +1,297 @@
-/* Projects.css */
 .projects-section {
-    padding: 50px 20px;
-    max-width: 1000px;
+    padding: 4rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.projects-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  }
+  
+  .projects-header {
     text-align: center;
-}
-
-.project-card {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: var(--box-radius);
-    box-shadow: var(--shadow-light);
-    margin-bottom: 20px;
-}
-
-.project-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.project-card h3 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.project-card p {
-    margin: 5px 0 10px;
-}
-
-.project-card a {
-    color: #007bff;
-    text-decoration: none;
+    margin-bottom: 3rem;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
     font-weight: bold;
-}
-
-.project-card a:hover {
-    text-decoration: underline;
-}
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 48rem;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .project-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    max-height: 540px; /* Increased from 200px */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    background-color: #f9fafb;
+  }
+  
+  
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status-completed {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+  }
+  
+  .status-progress {
+    background-color: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+  }
+  
+  .status-default {
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-header {
+    margin-bottom: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+  
+  .project-card:hover .project-title {
+    color: #2563eb;
+  }
+  
+  .project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .project-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    width: fit-content;
+  }
+  
+  .project-company {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #2563eb;
+    margin: 0;
+  }
+  
+  .project-description {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .project-period {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+  }
+  
+  .period-icon {
+    font-size: 1rem;
+  }
+  
+  .project-achievements {
+    margin-bottom: 1rem;
+  }
+  
+  .achievements-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+  }
+  
+  .achievement-bullet {
+    color: #10b981;
+    font-weight: bold;
+    margin-top: 0.125rem;
+  }
+  
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-badge {
+    padding: 0.25rem 0.5rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .tech-more {
+    background-color: #e5e7eb;
+  }
+  
+  .project-actions {
+    padding-top: 0.5rem;
+  }
+  
+  .project-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  .button-icon {
+    font-size: 1rem;
+  }
+  
+  .projects-footer {
+    text-align: center;
+  }
+  
+  .footer-text {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .download-button {
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .projects-section {
+      padding: 2rem 1rem;
+    }
+  
+    .projects-title {
+      font-size: 2rem;
+    }
+  
+    .projects-subtitle {
+      font-size: 1rem;
+    }
+  
+    .project-content {
+      padding: 1rem;
+    }
+    .company-logo {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0.25rem auto 0.75rem auto;
+    }    
+  }
+  
