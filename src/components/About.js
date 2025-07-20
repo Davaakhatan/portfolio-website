@@ -9,7 +9,13 @@ const About = () => {
       <div className="section-box">
         <h2>About Me</h2>
         <p>
-          I am currently pursuing a Master’s degree in Software Engineering and have professional experience as a DevOps Engineer at Mongolia's largest commercial enterprise. My background also includes expertise in Information Security, where I specialize as a Microsoft Security Expert. Based in Ulaanbaatar, Mongolia, I enjoy playing basketball and am actively seeking opportunities in Software Engineering. I am particularly interested in roles focused on Java or JavaScript development, as well as positions in DevOps and DevSecOps Engineering.
+        I’m a DevOps and Full-Stack Engineer who enjoys building systems that just work — fast, reliable, and easy to manage. Over the past 6+ years, I’ve worked across banking, enterprise security, and education tech, helping teams move faster and reduce downtime.
+
+I’ve migrated legacy apps to the cloud, containerized services with Docker and Kubernetes, and automated pipelines using GitHub Actions, Jenkins, and Azure DevOps. I’ve also worked hands-on with AWS, Azure, Terraform, and tools like Grafana and Prometheus to improve observability and cut deployment issues.
+
+Beyond infrastructure, I’ve built full-stack apps with Node.js, React, and Java — and even created an AI-powered tool to generate SDLC docs from scratch.
+
+Whether I’m scripting a fix, optimizing a database, or jumping on a production issue, I like solving real problems and helping systems (and teams) run smoothly.
         </p>
       </div>
       
